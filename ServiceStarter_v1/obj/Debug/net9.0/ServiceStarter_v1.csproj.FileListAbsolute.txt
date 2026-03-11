@@ -47,10 +47,10 @@ D:\Workspaces\c#\2026-03-05_ServiceStarter_v1\ServiceStarter_v1\obj\Debug\net9.0
 D:\Workspaces\c#\2026-03-05_ServiceStarter_v1\ServiceStarter_v1\obj\Debug\net9.0\ServiceStarter_v1.AssemblyInfoInputs.cache
 D:\Workspaces\c#\2026-03-05_ServiceStarter_v1\ServiceStarter_v1\obj\Debug\net9.0\ServiceStarter_v1.AssemblyInfo.cs
 D:\Workspaces\c#\2026-03-05_ServiceStarter_v1\ServiceStarter_v1\obj\Debug\net9.0\ServiceStarter_v1.csproj.CoreCompileInputs.cache
+D:\Workspaces\c#\2026-03-05_ServiceStarter_v1\ServiceStarter_v1\obj\Debug\net9.0\ServiceStarter_v1.sourcelink.json
 D:\Workspaces\c#\2026-03-05_ServiceStarter_v1\ServiceStarter_v1\obj\Debug\net9.0\ServiceS.C41A33FF.Up2Date
 D:\Workspaces\c#\2026-03-05_ServiceStarter_v1\ServiceStarter_v1\obj\Debug\net9.0\ServiceStarter_v1.dll
 D:\Workspaces\c#\2026-03-05_ServiceStarter_v1\ServiceStarter_v1\obj\Debug\net9.0\refint\ServiceStarter_v1.dll
 D:\Workspaces\c#\2026-03-05_ServiceStarter_v1\ServiceStarter_v1\obj\Debug\net9.0\ServiceStarter_v1.pdb
 D:\Workspaces\c#\2026-03-05_ServiceStarter_v1\ServiceStarter_v1\obj\Debug\net9.0\ServiceStarter_v1.genruntimeconfig.cache
 D:\Workspaces\c#\2026-03-05_ServiceStarter_v1\ServiceStarter_v1\obj\Debug\net9.0\ref\ServiceStarter_v1.dll
-D:\Workspaces\c#\2026-03-05_ServiceStarter_v1\ServiceStarter_v1\obj\Debug\net9.0\ServiceStarter_v1.sourcelink.json

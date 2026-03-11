@@ -8,7 +8,7 @@ using Microsoft.Extensions.Options;
 
 namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
 {
-    internal class DomainObjectFactory: IDomainEntitySource//,IMonitoredItemSource
+    internal class DomainObjectFactory: IDomainEntitySource,IMonitoredItemSource
     {
         private readonly ILogger<DomainObjectFactory> _logger;
         private readonly ConfigDTO _config;
