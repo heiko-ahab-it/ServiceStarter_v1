@@ -8,21 +8,40 @@ using Microsoft.Extensions.Options;
 
 namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
 {
-    internal class DomainObjectFactory
+    internal class DomainObjectFactory: IDomainEntitySource
     {
         private readonly ILogger<DomainObjectFactory> _logger;
         private readonly ConfigDTO _config;
-        private List<DomainEntity> _domainEntities;
+        private Dictionary<string, DomainEntity> _domainEntities;// List<DomainEntity> _domainEntities;
+        private List<string> _sequence;
         
         public DomainObjectFactory(IOptions<ConfigDTO>options, ILogger<DomainObjectFactory> logger)
         {
             _logger = logger;
             _config = options.Value;
-            _domainEntities = new List<DomainEntity>();
+            _domainEntities = new Dictionary<string, DomainEntity>();//new List<DomainEntity>();
+            _sequence = new List<string>();
 
-            Build();
+            BuildDomainEntities();
+            BuildSequence();
         }
-        public bool Build()
+        public bool BuildSequence()
+        {
+            bool sequenceCompleteBuild = false;
+
+            List<string> sequenceDTO = _config.Sequence;
+            foreach(string item in sequenceDTO)
+            {
+                if (this._domainEntities.ContainsKey(item)) { this._sequence.Add(item); }
+                else 
+                { 
+                    throw new InvalidDataException(
+                        $"Object with Unique Name: {item} in Sequence, is not in Sequence Objects: {string.Join(",", this._domainEntities.Values)}"); 
+                }
+            }
+            return sequenceCompleteBuild;
+        }
+        public bool BuildDomainEntities()
         {
             bool buildAllDomainEntitysSuccessfull = false;
             Dictionary<string, SequenceObjectDTO> sequenceObj = _config.SequenceObjects;
@@ -42,7 +61,8 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
                         if (!OperatingSystem.IsWindows())
                              throw new Exception(" Operating System is not Windows - software can currently only be used on Windows");
                         WinService service = new WinService(name, maxRetry, recoveryTimeout);
-                        this._domainEntities.Add(service);
+                        //this._domainEntities.Add(service);
+                        this._domainEntities.Add(uniqueName,service);
                         break;
                     case PortTestDTO:
                         string server = ((PortTestDTO)item).Server;
@@ -51,24 +71,38 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
                         int startOk = ((PortTestDTO)item).startOk;
                         int endOk = ((PortTestDTO)item).endOk;
                         PortTest portTest = new PortTest(uniqueName,maxRetry,recoveryTimeout,server,port,protocol,startOk,endOk);
-                        this._domainEntities.Add(portTest);
+                        this._domainEntities.Add(uniqueName,portTest);
                         break;
                    
                     case LogTestDTO:
                         string fileName = ((LogTestDTO)item).FileName;
                         string path = ((LogTestDTO)item).Path;
                         LogTest logTest = new LogTest(uniqueName, maxRetry, recoveryTimeout, path, fileName);
-                        this._domainEntities.Add(logTest);
+                        this._domainEntities.Add(uniqueName,logTest);
                         break;
                     default:
                         throw new InvalidDataException($" Object in Config.SequenceObject{sequenceObj.GetType()} can not be of Type: {item.GetType()}");
                       
                 }
              }
-            this._domainEntities.ForEach(item => this._logger.LogTrace(item.ToString()));
-   
-           
+            //this._domainEntities.ForEach(item => this._logger.LogTrace(item.ToString()));
+            foreach (var item in this._domainEntities)
+            {
+                this._logger.LogTrace(item.ToString());
+            }
+
+
             return buildAllDomainEntitysSuccessfull;
+        }
+
+        public Dictionary<string,DomainEntity> GetDomainEntities()
+        {
+            return this._domainEntities;
+        }
+
+        public List<string> GetSequence()
+        {
+            return this._sequence;
         }
     }
 }

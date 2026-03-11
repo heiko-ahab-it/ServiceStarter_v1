@@ -1,4 +1,4 @@
-namespace ServiceStarter_v1
+namespace ServiceStarter_v1.Main
 {
     public class Worker : BackgroundService
     {
