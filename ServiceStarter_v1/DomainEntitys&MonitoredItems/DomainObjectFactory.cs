@@ -8,22 +8,27 @@ using Microsoft.Extensions.Options;
 
 namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
 {
-    internal class DomainObjectFactory: IDomainEntitySource
+    internal class DomainObjectFactory: IDomainEntitySource//,IMonitoredItemSource
     {
         private readonly ILogger<DomainObjectFactory> _logger;
         private readonly ConfigDTO _config;
         private Dictionary<string, DomainEntity> _domainEntities;// List<DomainEntity> _domainEntities;
         private List<string> _sequence;
+        private Type[] _typesForMonitoring = new Type[] {typeof(DUMMY), typeof(WinService),typeof(PortTest)};
+        private Dictionary<string,MonitoredItem> _monitoredItems = new Dictionary<string,MonitoredItem>();
+        private IServiceProvider _serviceProvider;
         
-        public DomainObjectFactory(IOptions<ConfigDTO>options, ILogger<DomainObjectFactory> logger)
+        public DomainObjectFactory(IOptions<ConfigDTO>options, ILogger<DomainObjectFactory> logger, IServiceProvider serviceProvider)
         {
             _logger = logger;
             _config = options.Value;
             _domainEntities = new Dictionary<string, DomainEntity>();//new List<DomainEntity>();
             _sequence = new List<string>();
+            _serviceProvider = serviceProvider;
 
             BuildDomainEntities();
             BuildSequence();
+            BuildMonitoredItems();
         }
         public bool BuildSequence()
         {
@@ -104,11 +109,6 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
                 }
              }
             foreach (var item in this._domainEntities) {this._logger.LogTrace(item.ToString()); }
-
-
-
-
-
             return buildAllDomainEntitysSuccessfull;
         }
 
@@ -120,6 +120,33 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
         public List<string> GetSequence()
         {
             return this._sequence;
+        }
+        
+        private void BuildMonitoredItems()
+        {
+            foreach (string key in this._domainEntities.Keys)
+            {
+                DomainEntity domainEntity = this._domainEntities[key];
+                if (ShouldBeMonitored(domainEntity))
+                {
+                    MonitoredItem monItem = ActivatorUtilities.CreateInstance<MonitoredItem>(_serviceProvider, domainEntity);
+                    monItem.RecoveryFinished += (result) =>
+                    {
+                        monItem._logger.LogDebug($"Recovery of {monItem._domainEntity.Name} finished! Result: {result.Message}");
+                    };
+                    this._monitoredItems.Add(key,monItem);
+                }
+            }  
+        }
+        private bool ShouldBeMonitored<T>(T domainObject) where T : notnull
+        {
+            return this._typesForMonitoring.Contains(domainObject.GetType());
+        }
+
+
+        public Dictionary<string, MonitoredItem> GetMonitoredItems()
+        {
+            return this._monitoredItems;
         }
     }
 }

@@ -8,6 +8,7 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
 {
     internal interface IMonitoredItemSource
     {
+        public Dictionary<string, MonitoredItem> GetMonitoredItems();
         
     }
 }
