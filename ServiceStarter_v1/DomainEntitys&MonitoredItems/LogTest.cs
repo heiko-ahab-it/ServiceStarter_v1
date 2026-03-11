@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ServiceStarter_v1.Main;
 
 namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
 {
@@ -41,22 +42,22 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
         }
 
 
-        protected override ExecutionResult IsHealthy()
+        public override ExecutionResult IsHealthy()
         {
             throw new NotImplementedException();
         }
 
-        protected override Task<ExecutionResult> RecoverAsync()
+        public override Task<ExecutionResult> RecoverAsync()
         {
             throw new NotImplementedException();
         }
 
-        protected override ExecutionResult StartAsync()
+        public override ExecutionResult StartAsync()
         {
             throw new NotImplementedException();
         }
 
-        protected override ExecutionResult Stop()
+        public override ExecutionResult Stop()
         {
             throw new NotImplementedException();
         }

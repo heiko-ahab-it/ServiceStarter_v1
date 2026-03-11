@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ServiceStarter_v1.Main;
 
 namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
 {
@@ -18,10 +19,10 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
             MaxRetries = maxRetries;
             RecoveryTimeout = recoveryTimeout;
         }
-        protected abstract ExecutionResult StartAsync();
-        protected abstract ExecutionResult IsHealthy();
-        protected abstract Task<ExecutionResult> RecoverAsync();
-        protected abstract ExecutionResult Stop();
+        public abstract ExecutionResult StartAsync();
+        public abstract ExecutionResult IsHealthy();
+        public abstract Task<ExecutionResult> RecoverAsync();
+        public abstract ExecutionResult Stop();
 
         public override string ToString()
         {

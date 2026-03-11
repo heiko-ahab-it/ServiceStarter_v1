@@ -37,12 +37,29 @@ var failedValidations = new List<ValidationResult>();
 bool isRecursivValid = RecursiveValidator.TryValidateObjectRecursive(config!, failedValidations);
 Log.Verbose($"{config} object is validated: {isRecursivValid}");
 failedValidations.ForEach(err => Log.Error(err.ErrorMessage!));
+if(!isRecursivValid) { throw new ValidationException($"Validation of Config File failed: {string.Join(",",failedValidations.Select(v=>v.ErrorMessage))}"); }
 
 //INJECT CONFIG
 var configWrapper = Options.Create(config);
 builder.Services.AddSingleton(configWrapper);
-builder.Services.AddSingleton<DomainObjectFactory>();
-var fac = builder.Services.BuildServiceProvider().GetRequiredService<DomainObjectFactory>();
+builder.Services.AddSingleton<DomainObjectFactory>(); // Das Object muss nachfolgend untermehredn Schlüsseln registriert werden damit Objekte welche nur das Interface kennen das Objekt finden
+builder.Services.AddSingleton<IDomainEntitySource>(sp => sp.GetRequiredService<DomainObjectFactory>());
+//builder.Services.AddSingleton<IMonitoredItemSource>(sp => sp.GetRequiredService<DomainObjectFactory>());
+
+var serviceProvider = builder.Services.BuildServiceProvider();
+var domainFactory = serviceProvider.GetRequiredService<DomainObjectFactory>();
+
+
+
+//StartUpHandler
+
+builder.Services.AddSingleton<StartUpHandler>();
+serviceProvider = builder.Services.BuildServiceProvider();
+
+var startHandler = serviceProvider.GetRequiredService<StartUpHandler>();
+CancellationTokenSource cts = new CancellationTokenSource();
+var token = cts.Token;
+startHandler.StartAllDomainEntities(token);
 
 
 /*var host = builder.Build();

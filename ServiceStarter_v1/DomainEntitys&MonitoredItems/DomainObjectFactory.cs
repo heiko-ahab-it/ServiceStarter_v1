@@ -45,6 +45,7 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
         {
             bool buildAllDomainEntitysSuccessfull = false;
             Dictionary<string, SequenceObjectDTO> sequenceObj = _config.SequenceObjects;
+            _logger.LogTrace($"sequenceObject(DTO) count: {sequenceObj.Keys.Count}");
             foreach (var key in sequenceObj.Keys)
             {
                 SequenceObjectDTO item = sequenceObj[key];
@@ -52,9 +53,26 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
                 int maxRetry = item.MaxRetry;
                 int recoveryTimeout = item.RecoveryTimeout;
                 string uniqueName = key;
+
+                using var loggerFactory = LoggerFactory.Create(builder =>
+                {
+                    builder.AddConsole();               // Log-Ausgabe auf Konsole
+                    builder.SetMinimumLevel(LogLevel.Trace);
+                });
+
+                ILogger<DUMMY> dummyLogger = loggerFactory.CreateLogger<DUMMY>();
+
                 switch (item)
                 {
-                    case ServiceDTO:
+                    case ServiceDTO or PortTestDTO or LogTestDTO:
+                       
+
+
+                        var dummy = new DUMMY(uniqueName,maxRetry,recoveryTimeout,dummyLogger);
+                        this._domainEntities.Add(uniqueName, dummy);
+                        break;
+
+                    /*case ServiceDTO:
                        
                         string name = ((ServiceDTO)item).ServiceName;
                   
@@ -79,17 +97,16 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
                         string path = ((LogTestDTO)item).Path;
                         LogTest logTest = new LogTest(uniqueName, maxRetry, recoveryTimeout, path, fileName);
                         this._domainEntities.Add(uniqueName,logTest);
-                        break;
+                        break;*/
                     default:
                         throw new InvalidDataException($" Object in Config.SequenceObject{sequenceObj.GetType()} can not be of Type: {item.GetType()}");
                       
                 }
              }
-            //this._domainEntities.ForEach(item => this._logger.LogTrace(item.ToString()));
-            foreach (var item in this._domainEntities)
-            {
-                this._logger.LogTrace(item.ToString());
-            }
+            foreach (var item in this._domainEntities) {this._logger.LogTrace(item.ToString()); }
+
+
+
 
 
             return buildAllDomainEntitysSuccessfull;

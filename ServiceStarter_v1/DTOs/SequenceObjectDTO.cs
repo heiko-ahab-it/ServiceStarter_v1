@@ -17,7 +17,7 @@ namespace ConfigLoader_v2
     {
         [JsonPropertyName("maxRetry")]
         [JsonRequired]
-        [Range(0,int.MaxValue)]
+        [Range(1,int.MaxValue)]
         public int MaxRetry { get; set; }
 
         [JsonRequired]
