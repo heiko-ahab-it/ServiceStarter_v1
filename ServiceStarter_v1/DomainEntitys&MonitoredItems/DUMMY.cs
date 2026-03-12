@@ -20,6 +20,14 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
             return randomSuccess;
 
         }
+        public override ExecutionResult Recover()
+        {
+            Thread.Sleep(2000);
+            bool randomSuccess = new Random().Next(2) == 1;
+            ExecutionResult result = new ExecutionResult(randomSuccess, randomSuccess == true ? "Service RECOVERY war erfolgreich" : "Service RECOVERY Fehlgeschlagen");
+
+            return result;
+        }
 
         public override ExecutionResult IsHealthy()
         {
@@ -27,14 +35,14 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
             return new ExecutionResult(randomSuccess, randomSuccess == true ? "ServiceStart ist gesund" : "Service ist unerwartet gestoppt");
         }
 
-        public override async Task<ExecutionResult> RecoverAsync()
+        /*public override async Task<ExecutionResult> RecoverAsync()
         {
             await Task.Delay(1000);  // stellvetretend für recovery(also neustart des dienstes)
             bool randomSuccess = new Random().Next(2) == 1;
             ExecutionResult result = new ExecutionResult(randomSuccess, randomSuccess == true ? "Service RECOVERY war erfolgreich" : "Service RECOVERY Fehlgeschlagen");
 
             return result;
-        }
+        }*/
 
         public override ExecutionResult StartAsync()
         {

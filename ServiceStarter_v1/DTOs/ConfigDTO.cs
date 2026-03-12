@@ -5,14 +5,16 @@ using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
+using ServiceStarter_v1.DTOs;
 
 namespace ConfigLoader_v2
 {
     internal class ConfigDTO
     {
-        [JsonPropertyName("config")]
+        [JsonPropertyName("config")] 
         [Required]
-        public required Dictionary<string, object> Config { get; set; }
+        public required GlobalConfigDTO Config { get; set; }
+        //public required Dictionary<string, object> Config { get; set; }
         
         [JsonPropertyName("sequence")]
         [Required]

@@ -54,3 +54,5 @@ D:\Workspaces\c#\2026-03-05_ServiceStarter_v1\ServiceStarter_v1\obj\Debug\net9.0
 D:\Workspaces\c#\2026-03-05_ServiceStarter_v1\ServiceStarter_v1\obj\Debug\net9.0\ServiceStarter_v1.pdb
 D:\Workspaces\c#\2026-03-05_ServiceStarter_v1\ServiceStarter_v1\obj\Debug\net9.0\ServiceStarter_v1.genruntimeconfig.cache
 D:\Workspaces\c#\2026-03-05_ServiceStarter_v1\ServiceStarter_v1\obj\Debug\net9.0\ref\ServiceStarter_v1.dll
+D:\Workspaces\c#\2026-03-05_ServiceStarter_v1\ServiceStarter_v1\bin\Debug\net9.0\System.ServiceProcess.ServiceController.dll
+D:\Workspaces\c#\2026-03-05_ServiceStarter_v1\ServiceStarter_v1\bin\Debug\net9.0\runtimes\win\lib\net9.0\System.ServiceProcess.ServiceController.dll

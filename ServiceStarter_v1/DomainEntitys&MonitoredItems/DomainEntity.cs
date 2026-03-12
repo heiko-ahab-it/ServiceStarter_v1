@@ -21,7 +21,9 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
         }
         public abstract ExecutionResult StartAsync();
         public abstract ExecutionResult IsHealthy();
-        public abstract Task<ExecutionResult> RecoverAsync();
+        public abstract ExecutionResult Recover();
+        
+        //public abstract Task<ExecutionResult> RecoverAsync();
         public abstract ExecutionResult Stop();
 
         public override string ToString()

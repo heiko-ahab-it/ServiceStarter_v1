@@ -11,6 +11,7 @@ namespace ServiceStarter_v1.Main
         public bool IsSuccessfull { get; private set; }
         public string Message { get; private set; }
         public Exception? InnerException { get; private set; }
+        //public ExecutionResult? InnerResult { get; private set; }
 
         public ExecutionResult(bool success,string mssg, Exception error)
         {
@@ -24,15 +25,20 @@ namespace ServiceStarter_v1.Main
             Message = mssg;
         }
 
-
-        override
-        public string ToString()
+        public override string ToString()
         {
-            return $"{{ " +
-                $"\"IsSuccessfull\": {IsSuccessfull.ToString().ToLower()}," +
-                $" \"Message\": \"{Message}\", " +
-                $"\"InnerException\": \"{InnerException?.Message}\"" +
-                $" }}";
+            string result = $"Class: {this.GetType().Name} || ";
+            var props = GetType().GetProperties();
+
+            var propStr = string.Join(", ",
+                props
+                    .Select(p => new { Prop = p, Value = p.GetValue(this) })
+                    .Where(x => x.Value != null)
+                    .Select(x => $"{x.Prop.Name}: {x.Value}")
+            );
+
+            return result + propStr;
         }
+        
     }
 }

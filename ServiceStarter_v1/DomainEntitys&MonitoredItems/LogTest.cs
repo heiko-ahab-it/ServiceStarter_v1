@@ -47,10 +47,10 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
             throw new NotImplementedException();
         }
 
-        public override Task<ExecutionResult> RecoverAsync()
+       /* public override Task<ExecutionResult> RecoverAsync()
         {
             throw new NotImplementedException();
-        }
+        }*/
 
         public override ExecutionResult StartAsync()
         {
@@ -58,6 +58,10 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
         }
 
         public override ExecutionResult Stop()
+        {
+            throw new NotImplementedException();
+        }
+        public override ExecutionResult Recover()
         {
             throw new NotImplementedException();
         }

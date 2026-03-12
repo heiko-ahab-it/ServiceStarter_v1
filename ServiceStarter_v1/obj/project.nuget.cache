@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "dCD0T3CyBX4=",
+  "dgSpecHash": "F3tEAk/ikSc=",
   "success": true,
   "projectFilePath": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\ServiceStarter_v1.csproj",
   "expectedPackageFiles": [
@@ -38,8 +38,9 @@
     "C:\\Users\\HeikoKrämer\\.nuget\\packages\\serilog.sinks.console\\6.1.1\\serilog.sinks.console.6.1.1.nupkg.sha512",
     "C:\\Users\\HeikoKrämer\\.nuget\\packages\\serilog.sinks.file\\7.0.0\\serilog.sinks.file.7.0.0.nupkg.sha512",
     "C:\\Users\\HeikoKrämer\\.nuget\\packages\\system.diagnostics.diagnosticsource\\10.0.0\\system.diagnostics.diagnosticsource.10.0.0.nupkg.sha512",
-    "C:\\Users\\HeikoKrämer\\.nuget\\packages\\system.diagnostics.eventlog\\9.0.13\\system.diagnostics.eventlog.9.0.13.nupkg.sha512",
-    "C:\\Users\\HeikoKrämer\\.nuget\\packages\\system.reflection.metadata\\5.0.0\\system.reflection.metadata.5.0.0.nupkg.sha512"
+    "C:\\Users\\HeikoKrämer\\.nuget\\packages\\system.diagnostics.eventlog\\10.0.4\\system.diagnostics.eventlog.10.0.4.nupkg.sha512",
+    "C:\\Users\\HeikoKrämer\\.nuget\\packages\\system.reflection.metadata\\5.0.0\\system.reflection.metadata.5.0.0.nupkg.sha512",
+    "C:\\Users\\HeikoKrämer\\.nuget\\packages\\system.serviceprocess.servicecontroller\\10.0.4\\system.serviceprocess.servicecontroller.10.0.4.nupkg.sha512"
   ],
   "logs": []
 }

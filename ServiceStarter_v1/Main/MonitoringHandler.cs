@@ -26,8 +26,9 @@ namespace ServiceStarter_v1.Main
             foreach (string key in _items.Keys)
             {
                 MonitoredItem item = _items[key];
-                ExecutionResult result = item.ExecuteAsync(token);
-                _logger.LogDebug($"Processed item: {item}:{item._domainEntity.Name} with result [{result.ToString()}]");
+                /* ExecutionResult result = item.ExecuteAsync(token);*/
+                ExecutionResult result = item.Execute(token);
+                _logger.LogDebug($"Processed item: {item} with result [{result.ToString()}]");
                 processedItems++;
             }
 

@@ -41,33 +41,33 @@ if(!isRecursivValid) { throw new ValidationException($"Validation of Config File
 
 //INJECT CONFIG
 var configWrapper = Options.Create(config);
-builder.Services.AddSingleton(configWrapper);
+builder.Services.AddSingleton( configWrapper);
 builder.Services.AddSingleton<DomainObjectFactory>(); // Das Object muss nachfolgend untermehredn Schlüsseln registriert werden damit Objekte welche nur das Interface kennen das Objekt finden
 builder.Services.AddSingleton<IDomainEntitySource>(sp => sp.GetRequiredService<DomainObjectFactory>());
 builder.Services.AddSingleton<IMonitoredItemSource>(sp => sp.GetRequiredService<DomainObjectFactory>());
 
 var serviceProvider = builder.Services.BuildServiceProvider();
-var domainFactory = serviceProvider.GetRequiredService<DomainObjectFactory>();
+/*var domainFactory = serviceProvider.GetRequiredService<DomainObjectFactory>();*/
 
 
 
 //StartUpHandler
 builder.Services.AddSingleton<StartUpHandler>();
 serviceProvider = builder.Services.BuildServiceProvider();
-var startHandler = serviceProvider.GetRequiredService<StartUpHandler>();
+/*var startHandler = serviceProvider.GetRequiredService<StartUpHandler>();
 CancellationTokenSource cts = new CancellationTokenSource();
 var token = cts.Token;
-startHandler.StartAllDomainEntities(token);
+startHandler.StartAllDomainEntities(token);*/
 
 // MonitoringHandler
 builder.Services.AddSingleton<MonitoringHandler>();
 serviceProvider = builder.Services.BuildServiceProvider();
-var monitorHandler = serviceProvider.GetRequiredService<MonitoringHandler>();
-monitorHandler.ProcessAllMonitoredItems(cts.Token);
+/*var monitorHandler = serviceProvider.GetRequiredService<MonitoringHandler>();
+monitorHandler.ProcessAllMonitoredItems(cts.Token);*/
 
 
-/*var host = builder.Build();
+var host = builder.Build();
 host.Run();
-*/
+
 
 

@@ -8,7 +8,7 @@ using ServiceStarter_v1.DomainEntitys_MonitoredItems;
 
 namespace ServiceStarter_v1.Main
 {
-    internal class StartUpHandler
+   internal  class StartUpHandler
     {
         private IDomainEntitySource _domainSource;
         private Dictionary<string, DomainEntity> _domainEntities;
@@ -21,11 +21,13 @@ namespace ServiceStarter_v1.Main
             this._domainEntities = this._domainSource.GetDomainEntities();
             this._sequence = this._domainSource.GetSequence();
         }
-        public bool StartAllDomainEntities(CancellationToken token)
+        public int StartAllDomainEntities(CancellationToken token)
         {
-            bool allStarted = false;
+            //bool allStarted = false;
+            int count = 0;
             foreach (string key in this._sequence)
             {
+                count++;
                 if (!this._domainEntities.ContainsKey(key))
                 { throw new InvalidDataException($"{this.GetType().Name}._domainEnities do not contain Key: {key}"); }
                 DomainEntity domainObj = this._domainEntities[key];
@@ -37,7 +39,7 @@ namespace ServiceStarter_v1.Main
                     throw new ApplicationException(mssg);
                 }
             }
-            return allStarted;
+            return count;
         }
 
         public bool TryStartingDomainEntity(DomainEntity domainObj, CancellationToken cancellationToken)
