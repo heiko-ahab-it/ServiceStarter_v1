@@ -9,3 +9,18 @@
 2026-03-16 12:29:34.565 [INF] [::] Current Log Directory: D:\Workspaces\2_LOG
 2026-03-16 12:29:34.679 [VRB] [::] ConfigLoader_v2.ConfigDTO object is validated: True
 2026-03-16 12:29:34.687 [INF] [::] Bootstrap finished |  Changing to Working Log ... || -> D:\Workspaces\2_LOG 
+2026-03-16 13:01:24.240 [INF] [::] Reading Config-File from D:\Workspaces\1_TestData\2026-02-26_Konfig_V3.json
+2026-03-16 13:01:25.668 [VRB] [::] ConfigDTO: ConfigLoader_v2.ConfigDTO created from ConfigFileD:\Workspaces\1_TestData\2026-02-26_Konfig_V3.json
+2026-03-16 13:01:25.676 [INF] [::] Current Log Directory: D:\Workspaces\2_LOG
+2026-03-16 13:01:25.795 [VRB] [::] ConfigLoader_v2.ConfigDTO object is validated: True
+2026-03-16 13:01:25.799 [INF] [::] Bootstrap finished |  Changing to Working Log ... || -> D:\Workspaces\2_LOG 
+2026-03-16 13:30:17.897 [INF] [::] Reading Config-File from D:\Workspaces\1_TestData\2026-02-26_Konfig_V3.json
+2026-03-16 13:30:18.375 [VRB] [::] ConfigDTO: ServiceStarterDataModel.DTOs.ConfigDTO created from ConfigFileD:\Workspaces\1_TestData\2026-02-26_Konfig_V3.json
+2026-03-16 13:30:18.378 [INF] [::] Current Log Directory: D:\Workspaces\2_LOG
+2026-03-16 13:30:18.427 [VRB] [::] ServiceStarterDataModel.DTOs.ConfigDTO object is validated: True
+2026-03-16 13:30:18.429 [INF] [::] Bootstrap finished |  Changing to Working Log ... || -> D:\Workspaces\2_LOG 
+2026-03-16 13:31:25.316 [INF] [::] Reading Config-File from D:\Workspaces\1_TestData\2026-02-26_Konfig_V3.json
+2026-03-16 13:31:25.561 [VRB] [::] ConfigDTO: ServiceStarterDataModel.DTOs.ConfigDTO created from ConfigFileD:\Workspaces\1_TestData\2026-02-26_Konfig_V3.json
+2026-03-16 13:31:25.565 [INF] [::] Current Log Directory: D:\Workspaces\2_LOG
+2026-03-16 13:31:25.596 [VRB] [::] ServiceStarterDataModel.DTOs.ConfigDTO object is validated: True
+2026-03-16 13:31:25.598 [INF] [::] Bootstrap finished |  Changing to Working Log ... || -> D:\Workspaces\2_LOG 

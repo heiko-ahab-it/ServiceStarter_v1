@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConfigLoader_v2
+namespace ServiceStarterDataModel.DTOs
 {
-    internal class MailServerDTO
+    public class MailServerDTO
     {
         public required String Host { get; set; }
         

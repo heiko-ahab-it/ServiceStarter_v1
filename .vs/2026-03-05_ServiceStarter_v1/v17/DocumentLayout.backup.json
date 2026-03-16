@@ -3,76 +3,27 @@
   "WorkspaceRootPath": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|d:\\workspaces\\c#\\2026-03-05_servicestarter_v1\\servicestarter_v1\\validation\u0026config\\jsonconfigfileloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|solutionrelative:servicestarter_v1\\validation\u0026config\\jsonconfigfileloader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|d:\\workspaces\\c#\\2026-03-05_servicestarter_v1\\servicestarter_v1\\main\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|solutionrelative:servicestarter_v1\\main\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|d:\\workspaces\\c#\\2026-03-05_servicestarter_v1\\servicestarter_v1\\dtos\\globalconfigdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|solutionrelative:servicestarter_v1\\dtos\\globalconfigdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|d:\\workspaces\\c#\\2026-03-05_servicestarter_v1\\servicestarter_v1\\validation\u0026config\\loggingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|solutionrelative:servicestarter_v1\\validation\u0026config\\loggingextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|d:\\workspaces\\c#\\2026-03-05_servicestarter_v1\\servicestarter_v1\\test\\winservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|solutionrelative:servicestarter_v1\\test\\winservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|d:\\workspaces\\c#\\2026-03-05_servicestarter_v1\\servicestarter_v1\\domainentitys\u0026monitoreditems\\winservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|solutionrelative:servicestarter_v1\\domainentitys\u0026monitoreditems\\winservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|d:\\workspaces\\c#\\2026-03-05_servicestarter_v1\\servicestarter_v1\\main\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|solutionrelative:servicestarter_v1\\main\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|d:\\workspaces\\c#\\2026-03-05_servicestarter_v1\\servicestarter_v1\\main\\startuphandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|solutionrelative:servicestarter_v1\\main\\startuphandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|d:\\workspaces\\c#\\2026-03-05_servicestarter_v1\\servicestarter_v1\\domainentitys\u0026monitoreditems\\domainentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|solutionrelative:servicestarter_v1\\domainentitys\u0026monitoreditems\\domainentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|d:\\workspaces\\c#\\2026-03-05_servicestarter_v1\\servicestarter_v1\\domainentitys\u0026monitoreditems\\monitoreditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|solutionrelative:servicestarter_v1\\domainentitys\u0026monitoreditems\\monitoreditem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|d:\\workspaces\\c#\\2026-03-05_servicestarter_v1\\servicestarter_v1\\domainentitys\u0026monitoreditems\\logtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|solutionrelative:servicestarter_v1\\domainentitys\u0026monitoreditems\\logtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|d:\\workspaces\\c#\\2026-03-05_servicestarter_v1\\servicestarter_v1\\domainentitys\u0026monitoreditems\\porttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|solutionrelative:servicestarter_v1\\domainentitys\u0026monitoreditems\\porttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|d:\\workspaces\\c#\\2026-03-05_servicestarter_v1\\servicestarter_v1\\domainentitys\u0026monitoreditems\\domainobjectfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|solutionrelative:servicestarter_v1\\domainentitys\u0026monitoreditems\\domainobjectfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|d:\\workspaces\\c#\\2026-03-05_servicestarter_v1\\servicestarter_v1\\domainentitys\u0026monitoreditems\\dummy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|solutionrelative:servicestarter_v1\\domainentitys\u0026monitoreditems\\dummy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{32BC1CBF-2FCC-4D97-A2A2-C9BEE2B8EB11}|..\\OwnLibrarys\\2026-03-16_ServiceStarterDataModel\\ServiceStarterDataModel\\ServiceStarterDataModel.csproj|d:\\workspaces\\c#\\ownlibrarys\\2026-03-16_servicestarterdatamodel\\servicestarterdatamodel\\dtos\\configdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|d:\\workspaces\\c#\\2026-03-05_servicestarter_v1\\servicestarter_v1\\domainentitys\u0026monitoreditems\\porttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|solutionrelative:servicestarter_v1\\domainentitys\u0026monitoreditems\\porttest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|d:\\workspaces\\c#\\2026-03-05_servicestarter_v1\\servicestarter_v1\\dtos\\sequenceobjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|solutionrelative:servicestarter_v1\\dtos\\sequenceobjectdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|d:\\workspaces\\c#\\2026-03-05_servicestarter_v1\\servicestarter_v1\\dtos\\configdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|solutionrelative:servicestarter_v1\\dtos\\configdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|d:\\workspaces\\c#\\2026-03-05_servicestarter_v1\\servicestarter_v1\\main\\monitoringhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|solutionrelative:servicestarter_v1\\main\\monitoringhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|d:\\workspaces\\c#\\2026-03-05_servicestarter_v1\\servicestarter_v1\\main\\mybackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|solutionrelative:servicestarter_v1\\main\\mybackgroundservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|d:\\workspaces\\c#\\2026-03-05_servicestarter_v1\\servicestarter_v1\\main\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B408E7B0-51CE-4831-804C-DA84D479362F}|ServiceStarter_v1\\ServiceStarter_v1.csproj|solutionrelative:servicestarter_v1\\main\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,240 +33,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "WinServiceTest.cs",
-              "DocumentMoniker": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\Test\\WinServiceTest.cs",
-              "RelativeDocumentMoniker": "ServiceStarter_v1\\Test\\WinServiceTest.cs",
-              "ToolTip": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\Test\\WinServiceTest.cs",
-              "RelativeToolTip": "ServiceStarter_v1\\Test\\WinServiceTest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T10:48:24.993Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "StartUpHandler.cs",
-              "DocumentMoniker": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\Main\\StartUpHandler.cs",
-              "RelativeDocumentMoniker": "ServiceStarter_v1\\Main\\StartUpHandler.cs",
-              "ToolTip": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\Main\\StartUpHandler.cs",
-              "RelativeToolTip": "ServiceStarter_v1\\Main\\StartUpHandler.cs",
-              "ViewState": "AgIAABQAAABAppmZmZkrwCgAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T08:28:52.651Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "LoggingExtensions.cs",
               "DocumentMoniker": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\Validation\u0026Config\\LoggingExtensions.cs",
               "RelativeDocumentMoniker": "ServiceStarter_v1\\Validation\u0026Config\\LoggingExtensions.cs",
               "ToolTip": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\Validation\u0026Config\\LoggingExtensions.cs",
               "RelativeToolTip": "ServiceStarter_v1\\Validation\u0026Config\\LoggingExtensions.cs",
-              "ViewState": "AgIAAA8AAAAASjMzMzMvwDUAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-16T08:07:46.646Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MonitoredItem.cs",
-              "DocumentMoniker": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\MonitoredItem.cs",
-              "RelativeDocumentMoniker": "ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\MonitoredItem.cs",
-              "ToolTip": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\MonitoredItem.cs",
-              "RelativeToolTip": "ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\MonitoredItem.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowCgAAABZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T16:14:02.359Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LogTest.cs",
-              "DocumentMoniker": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\LogTest.cs",
-              "RelativeDocumentMoniker": "ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\LogTest.cs",
-              "ToolTip": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\LogTest.cs",
-              "RelativeToolTip": "ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\LogTest.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwDAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T16:09:57.573Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "PortTest.cs",
-              "DocumentMoniker": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\PortTest.cs",
-              "RelativeDocumentMoniker": "ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\PortTest.cs",
-              "ToolTip": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\PortTest.cs",
-              "RelativeToolTip": "ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\PortTest.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAD4vyIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T16:09:44.555Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "DUMMY.cs",
-              "DocumentMoniker": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\DUMMY.cs",
-              "RelativeDocumentMoniker": "ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\DUMMY.cs",
-              "ToolTip": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\DUMMY.cs",
-              "RelativeToolTip": "ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\DUMMY.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAB/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T16:09:33.166Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "SequenceObjectDTO.cs",
-              "DocumentMoniker": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\DTOs\\SequenceObjectDTO.cs",
-              "RelativeDocumentMoniker": "ServiceStarter_v1\\DTOs\\SequenceObjectDTO.cs",
-              "ToolTip": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\DTOs\\SequenceObjectDTO.cs",
-              "RelativeToolTip": "ServiceStarter_v1\\DTOs\\SequenceObjectDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T15:56:39.539Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DomainEntity.cs",
-              "DocumentMoniker": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\DomainEntity.cs",
-              "RelativeDocumentMoniker": "ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\DomainEntity.cs",
-              "ToolTip": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\DomainEntity.cs",
-              "RelativeToolTip": "ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\DomainEntity.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAsAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T15:53:55.537Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "WinService.cs",
-              "DocumentMoniker": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\WinService.cs",
-              "RelativeDocumentMoniker": "ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\WinService.cs",
-              "ToolTip": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\WinService.cs",
-              "RelativeToolTip": "ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\WinService.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAAwIQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T15:51:36.553Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GlobalConfigDTO.cs",
-              "DocumentMoniker": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\DTOs\\GlobalConfigDTO.cs",
-              "RelativeDocumentMoniker": "ServiceStarter_v1\\DTOs\\GlobalConfigDTO.cs",
-              "ToolTip": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\DTOs\\GlobalConfigDTO.cs",
-              "RelativeToolTip": "ServiceStarter_v1\\DTOs\\GlobalConfigDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T15:31:01.711Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "JsonConfigFileLoader.cs",
-              "DocumentMoniker": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\Validation\u0026Config\\JsonConfigFileLoader.cs",
-              "RelativeDocumentMoniker": "ServiceStarter_v1\\Validation\u0026Config\\JsonConfigFileLoader.cs",
-              "ToolTip": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\Validation\u0026Config\\JsonConfigFileLoader.cs",
-              "RelativeToolTip": "ServiceStarter_v1\\Validation\u0026Config\\JsonConfigFileLoader.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAIA7wB0AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T15:20:55.017Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ConfigDTO.cs",
-              "DocumentMoniker": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\DTOs\\ConfigDTO.cs",
-              "RelativeDocumentMoniker": "ServiceStarter_v1\\DTOs\\ConfigDTO.cs",
-              "ToolTip": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\DTOs\\ConfigDTO.cs",
-              "RelativeToolTip": "ServiceStarter_v1\\DTOs\\ConfigDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwA8AAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T15:12:57.734Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DomainObjectFactory.cs",
-              "DocumentMoniker": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\DomainObjectFactory.cs",
-              "RelativeDocumentMoniker": "ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\DomainObjectFactory.cs",
-              "ToolTip": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\DomainObjectFactory.cs",
-              "RelativeToolTip": "ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\DomainObjectFactory.cs",
-              "ViewState": "AgIAAEQAAAAAAAAAAAAgwFkAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T15:11:24.52Z",
+              "WhenOpened": "2026-03-16T12:30:05.63Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\Main\\Program.cs",
-              "RelativeDocumentMoniker": "ServiceStarter_v1\\Main\\Program.cs",
-              "ToolTip": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\Main\\Program.cs",
-              "RelativeToolTip": "ServiceStarter_v1\\Main\\Program.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAQwC4AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T15:07:36.295Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "MyBackgroundService.cs",
-              "DocumentMoniker": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\Main\\MyBackgroundService.cs",
-              "RelativeDocumentMoniker": "ServiceStarter_v1\\Main\\MyBackgroundService.cs",
-              "ToolTip": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\Main\\MyBackgroundService.cs",
-              "RelativeToolTip": "ServiceStarter_v1\\Main\\MyBackgroundService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T15:06:10.213Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "MonitoringHandler.cs",
-              "DocumentMoniker": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\Main\\MonitoringHandler.cs",
-              "RelativeDocumentMoniker": "ServiceStarter_v1\\Main\\MonitoringHandler.cs",
-              "ToolTip": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\Main\\MonitoringHandler.cs",
-              "RelativeToolTip": "ServiceStarter_v1\\Main\\MonitoringHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T15:04:50.598Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Worker.cs",
               "DocumentMoniker": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\Main\\Worker.cs",
               "RelativeDocumentMoniker": "ServiceStarter_v1\\Main\\Worker.cs",
               "ToolTip": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\Main\\Worker.cs",
               "RelativeToolTip": "ServiceStarter_v1\\Main\\Worker.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-12T15:03:24.546Z",
+              "WhenOpened": "2026-03-16T12:29:42.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PortTest.cs",
+              "DocumentMoniker": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\PortTest.cs",
+              "RelativeDocumentMoniker": "ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\PortTest.cs",
+              "ToolTip": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\PortTest.cs",
+              "RelativeToolTip": "ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\PortTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T12:29:28.701Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DomainObjectFactory.cs",
+              "DocumentMoniker": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\DomainObjectFactory.cs",
+              "RelativeDocumentMoniker": "ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\DomainObjectFactory.cs",
+              "ToolTip": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\DomainObjectFactory.cs",
+              "RelativeToolTip": "ServiceStarter_v1\\DomainEntitys\u0026MonitoredItems\\DomainObjectFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T12:28:56.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ConfigDTO.cs",
+              "DocumentMoniker": "D:\\Workspaces\\c#\\OwnLibrarys\\2026-03-16_ServiceStarterDataModel\\ServiceStarterDataModel\\DTOs\\ConfigDTO.cs",
+              "RelativeDocumentMoniker": "..\\OwnLibrarys\\2026-03-16_ServiceStarterDataModel\\ServiceStarterDataModel\\DTOs\\ConfigDTO.cs",
+              "ToolTip": "D:\\Workspaces\\c#\\OwnLibrarys\\2026-03-16_ServiceStarterDataModel\\ServiceStarterDataModel\\DTOs\\ConfigDTO.cs",
+              "RelativeToolTip": "..\\OwnLibrarys\\2026-03-16_ServiceStarterDataModel\\ServiceStarterDataModel\\DTOs\\ConfigDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T12:28:24.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\Main\\Program.cs",
+              "RelativeDocumentMoniker": "ServiceStarter_v1\\Main\\Program.cs",
+              "ToolTip": "D:\\Workspaces\\c#\\2026-03-05_ServiceStarter_v1\\ServiceStarter_v1\\Main\\Program.cs",
+              "RelativeToolTip": "ServiceStarter_v1\\Main\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T12:28:17.672Z",
               "EditorCaption": ""
             }
           ]

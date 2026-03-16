@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ConfigLoader_v2;
+using ServiceStarterDataModel.DTOs;
 using ServiceStarter_v1.Main;
 
 namespace ServiceStarter_v1.DomainEntitys_MonitoredItems

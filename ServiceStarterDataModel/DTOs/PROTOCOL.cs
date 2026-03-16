@@ -5,10 +5,10 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace ConfigLoader_v2
+namespace ServiceStarterDataModel.DTOs
 {
     [JsonConverter(typeof(JsonStringEnumConverter))]
-    internal enum PROTOCOL
+    public enum PROTOCOL
     {
         HTTP, HTTPS
     }

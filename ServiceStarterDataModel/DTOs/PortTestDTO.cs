@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConfigLoader_v2
+namespace ServiceStarterDataModel.DTOs
 {
-    internal class PortTestDTO: SequenceObjectDTO
+    public class PortTestDTO: SequenceObjectDTO
     {
         public required String Server { get; set; }
 

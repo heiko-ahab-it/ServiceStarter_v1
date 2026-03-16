@@ -14,6 +14,7 @@
           "Serilog.Extensions.Logging": "10.0.0",
           "Serilog.Sinks.Console": "6.1.1",
           "Serilog.Sinks.File": "7.0.0",
+          "ServiceStarterDataModel": "1.0.0",
           "System.Management": "10.0.5",
           "System.ServiceProcess.ServiceController": "10.0.4",
           "xunit.v3": "3.2.2"
@@ -804,6 +805,14 @@
             "fileVersion": "3.2.2.0"
           }
         }
+      },
+      "ServiceStarterDataModel/1.0.0": {
+        "runtime": {
+          "ServiceStarterDataModel.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -1218,6 +1227,11 @@
       "sha512": "sha512-ulWOdSvCk+bPXijJZ73bth9NyoOHsAs1ZOvamYbCkD4DNLX/Bd29Ve2ZNUwBbK0MqfIYWXHZViy/HKrdEC/izw==",
       "path": "xunit.v3.runner.inproc.console/3.2.2",
       "hashPath": "xunit.v3.runner.inproc.console.3.2.2.nupkg.sha512"
+    },
+    "ServiceStarterDataModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

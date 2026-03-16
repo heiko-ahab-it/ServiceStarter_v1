@@ -1232,6 +1232,16 @@
             "related": ".xml"
           }
         }
+      },
+      "ServiceStarterDataModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/ServiceStarterDataModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ServiceStarterDataModel.dll": {}
+        }
       }
     }
   },
@@ -3118,6 +3128,11 @@
         "xunit.v3.runner.inproc.console.3.2.2.nupkg.sha512",
         "xunit.v3.runner.inproc.console.nuspec"
       ]
+    },
+    "ServiceStarterDataModel/1.0.0": {
+      "type": "project",
+      "path": "../../OwnLibrarys/2026-03-16_ServiceStarterDataModel/ServiceStarterDataModel/ServiceStarterDataModel.csproj",
+      "msbuildProject": "../../OwnLibrarys/2026-03-16_ServiceStarterDataModel/ServiceStarterDataModel/ServiceStarterDataModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3128,6 +3143,7 @@
       "Serilog.Extensions.Logging >= 10.0.0",
       "Serilog.Sinks.Console >= 6.1.1",
       "Serilog.Sinks.File >= 7.0.0",
+      "ServiceStarterDataModel >= 1.0.0",
       "System.Management >= 10.0.5",
       "System.ServiceProcess.ServiceController >= 10.0.4",
       "xunit.v3 >= 3.2.2"
@@ -3164,7 +3180,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Workspaces\\c#\\OwnLibrarys\\2026-03-16_ServiceStarterDataModel\\ServiceStarterDataModel\\ServiceStarterDataModel.csproj": {
+              "projectPath": "D:\\Workspaces\\c#\\OwnLibrarys\\2026-03-16_ServiceStarterDataModel\\ServiceStarterDataModel\\ServiceStarterDataModel.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

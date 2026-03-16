@@ -1,9 +1,8 @@
 
 using System.Security.Principal;
-using ConfigLoader_v2;
 using Microsoft.Extensions.Options;
 using ServiceStarter_v1.DomainEntitys_MonitoredItems;
-using ServiceStarter_v1.DTOs;
+using ServiceStarterDataModel.DTOs;
 
 namespace ServiceStarter_v1.Main
 {

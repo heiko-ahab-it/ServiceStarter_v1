@@ -5,7 +5,7 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace ConfigLoader_v2
+namespace ServiceStarterDataModel.DTOs
 {
     public class ServiceDTO: SequenceObjectDTO
     {

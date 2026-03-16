@@ -1,4 +1,3 @@
-using ConfigLoader_v2;
 using Microsoft.Extensions.Options;
 using ServiceStarter_v1;
 using ServiceStarter_v1.DomainEntitys_MonitoredItems;
@@ -11,6 +10,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel;
 using ServiceStarter_v1.Validation_Config;
 using ServiceStarter_v1.Main;
+using ServiceStarterDataModel.DTOs;
 
 string configFilePath = @"D:\Workspaces\1_TestData\2026-02-26_Konfig_V3.json";
 string currentDir = AppContext.BaseDirectory;

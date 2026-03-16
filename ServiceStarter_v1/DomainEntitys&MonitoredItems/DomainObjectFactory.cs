@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ConfigLoader_v2;
+using ServiceStarterDataModel.DTOs;
 using Microsoft.Extensions.Options;
-using ServiceStarter_v1.DTOs;
+
 
 namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
 {

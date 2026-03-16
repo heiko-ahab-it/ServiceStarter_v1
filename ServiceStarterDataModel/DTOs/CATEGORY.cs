@@ -7,7 +7,7 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
-namespace ConfigLoader_v2
+namespace ServiceStarterDataModel.DTOs
 {
     [JsonConverter(typeof(CategoryEnumConverter))]
     public enum CATEGORY
