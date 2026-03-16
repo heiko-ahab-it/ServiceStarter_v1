@@ -51,7 +51,7 @@ namespace ServiceStarter_v1.Main
             while (retryCount > 0 && !domainObjStarted)
             {
                 if (cancellationToken.IsCancellationRequested) { break; }
-                result = domainObj.StartAsync();
+                result = domainObj.Start();
                 if (!result.IsSuccessfull)
                 {
                     retryCount--;

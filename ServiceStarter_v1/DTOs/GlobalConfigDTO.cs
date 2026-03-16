@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Text.Json.Serialization;
@@ -7,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace ServiceStarter_v1.DTOs
 {
+    [Description("Defines Default Values for Enviroment Variables.")]
     internal class GlobalConfigDTO
     {
         [JsonPropertyName("WIN_OS")]
@@ -19,6 +21,10 @@ namespace ServiceStarter_v1.DTOs
 
         [JsonPropertyName("MONITOR_DELAY")]
         public int MonitorDelay { get; set; } = 30;
+
+       /* [JsonPropertyName("FORCE_KILL_SERVICES")]
+
+        public bool ForceKillServices { get; set; } = false;*/
 
 
     }

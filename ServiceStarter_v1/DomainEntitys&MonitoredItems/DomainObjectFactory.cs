@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ConfigLoader_v2;
 using Microsoft.Extensions.Options;
+using ServiceStarter_v1.DTOs;
 
 namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
 {
@@ -12,6 +13,7 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
     {
         private readonly ILogger<DomainObjectFactory> _logger;
         private readonly ConfigDTO _config;
+        private readonly GlobalConfigDTO _globalConfig;
         private Dictionary<string, DomainEntity> _domainEntities;// List<DomainEntity> _domainEntities;
         private List<string> _sequence;
         private Type[] _typesForMonitoring = new Type[] {typeof(DUMMY), typeof(WinService),typeof(PortTest)};
@@ -22,6 +24,7 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
         {
             _logger = logger;
             _config = options.Value;
+            _globalConfig = _config.Config;
             _domainEntities = new Dictionary<string, DomainEntity>();//new List<DomainEntity>();
             _sequence = new List<string>();
             _serviceProvider = serviceProvider;
@@ -46,6 +49,8 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
             }
             return sequenceCompleteBuild;
         }
+
+      
         public bool BuildDomainEntities()
         {
             bool buildAllDomainEntitysSuccessfull = false;
@@ -61,6 +66,7 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
 
                 using var loggerFactory = LoggerFactory.Create(builder =>
                 {
+                    
                     builder.AddConsole();               // Log-Ausgabe auf Konsole
                     builder.SetMinimumLevel(LogLevel.Trace);
                 });
@@ -69,24 +75,27 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
 
                 switch (item)
                 {
-                    case ServiceDTO or PortTestDTO or LogTestDTO:
-                       
+                    case   PortTestDTO or LogTestDTO:
 
 
-                        var dummy = new DUMMY(uniqueName,maxRetry,recoveryTimeout,dummyLogger);
+
+                        //var dummy;// = new DUMMY(uniqueName,maxRetry,recoveryTimeout,dummyLogger);
+                        var dummy = ActivatorUtilities.CreateInstance<DUMMY>(_serviceProvider, uniqueName, maxRetry, recoveryTimeout);
                         this._domainEntities.Add(uniqueName, dummy);
                         break;
 
-                    /*case ServiceDTO:
+                    case ServiceDTO:
                        
-                        string name = ((ServiceDTO)item).ServiceName;
+                        string technicalName = ((ServiceDTO)item).ServiceName;
+                        //bool forceKill = this._globalConfig.ForceKillServices;
                   
                         if (!OperatingSystem.IsWindows())
                              throw new Exception(" Operating System is not Windows - software can currently only be used on Windows");
-                        WinService service = new WinService(name, maxRetry, recoveryTimeout);
+                        WinService service = ActivatorUtilities.CreateInstance<WinService>(_serviceProvider, uniqueName, maxRetry, recoveryTimeout,technicalName);//new WinService(name, maxRetry, recoveryTimeout);
                         //this._domainEntities.Add(service);
                         this._domainEntities.Add(uniqueName,service);
                         break;
+                /*
                     case PortTestDTO:
                         string server = ((PortTestDTO)item).Server;
                         int port = ((PortTestDTO)item).Port;

@@ -10,7 +10,7 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
     internal class DUMMY : DomainEntity
     {
         private ILogger _logger;
-        public DUMMY(string name, int maxRetries, int recoveryTimeout, ILogger<DUMMY> logger) : base(name, maxRetries, recoveryTimeout)
+        public DUMMY(string name, int maxRetries, int recoveryTimeout ,ILogger<DUMMY> logger) : base(name, maxRetries, recoveryTimeout)
         {
             this._logger = logger;
         }
@@ -44,9 +44,10 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
             return result;
         }*/
 
-        public override ExecutionResult StartAsync()
+        public override ExecutionResult Start()
         {
             bool randomSuccess = new Random().Next(4) != 1;
+            _logger.LogDebug(randomSuccess == true ? "ServiceStart war erfolgreich" : "Service konnte nicht gestartet werden");
             return new ExecutionResult(randomSuccess, randomSuccess == true ? "ServiceStart war erfolgreich" : "Service konnte nicht gestartet werden");
         }
 

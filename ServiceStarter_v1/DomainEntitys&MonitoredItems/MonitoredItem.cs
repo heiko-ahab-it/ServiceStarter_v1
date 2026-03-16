@@ -61,26 +61,5 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
 
         }
 
-       /* public async ExecutionResult ExecuteAsync(CancellationToken token)
-        {
-            await _semaphore.WaitAsync(token);
-            try
-            {
-                this._logger.LogTrace($"Processing : {this._domainEntity.Name}");
-                if (IsRecovering) { return new ExecutionResult(false, $"{this}:{this._domainEntity.Name} is Recovering"); }
-                ExecutionResult result = this._domainEntity.IsHealthy();
-                if (result.IsSuccessfull) { return new ExecutionResult(true, $"{this._domainEntity.Name}:{result.Message}"); }
-                IsRecovering = true;
-                StartRecoveryBackgroundProcess(token);
-                return result;
-            }
-            finally
-            {
-                _semaphore.Release();
-            }
-        }
-        private void StartRecoveryBackgroundProcess(CancellationToken cancellationToken)
-        {
-        }*/
     }
 }

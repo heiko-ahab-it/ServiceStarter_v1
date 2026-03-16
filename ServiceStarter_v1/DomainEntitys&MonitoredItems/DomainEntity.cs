@@ -9,21 +9,23 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
 {
     internal abstract class DomainEntity
     {
+        //private ILogger _logger;
         public string Name {get;private set;}
         public int MaxRetries { get;private set;}
         public int RecoveryTimeout {  get;private set;}
 
         public DomainEntity(string name,int maxRetries, int recoveryTimeout)
         {
-            Name = name;
+           Name = name;
             MaxRetries = maxRetries;
             RecoveryTimeout = recoveryTimeout;
+            
         }
-        public abstract ExecutionResult StartAsync();
+        public abstract ExecutionResult Start();
         public abstract ExecutionResult IsHealthy();
         public abstract ExecutionResult Recover();
         
-        //public abstract Task<ExecutionResult> RecoverAsync();
+       
         public abstract ExecutionResult Stop();
 
         public override string ToString()

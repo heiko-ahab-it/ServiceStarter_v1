@@ -1,4 +1,5 @@
 
+using System.Security.Principal;
 using ConfigLoader_v2;
 using Microsoft.Extensions.Options;
 using ServiceStarter_v1.DomainEntitys_MonitoredItems;
@@ -29,16 +30,32 @@ namespace ServiceStarter_v1.Main
 
         protected async override Task OnStartUp(CancellationToken token)
         {
-            if (!OperatingSystem.IsWindows())
+
+            if (OperatingSystem.IsWindows())
+            {
+                if (! WIN_UserIsAdministrator()) { throw new ApplicationException($"The Worker must be started with Administrator Priviliges"); }
+ 
+            }
+            else if (!OperatingSystem.IsWindows())
             {
                 _logger.LogCritical("Worker ist Currently only for Windows available");
                 throw new PlatformNotSupportedException("This application only supports Windows.");
             } // Wenn Kein Windows -> Dienst beenden
+           
             int count = this._startupHandler.StartAllDomainEntities(token);
             _logger.LogDebug($"Started {count} objects...");
 
             return;
 
+        }
+        #pragma warning disable CA1416
+        private bool WIN_UserIsAdministrator()
+        {
+            using (WindowsIdentity identity = WindowsIdentity.GetCurrent())
+            {
+                WindowsPrincipal principal = new WindowsPrincipal(identity);
+                return principal.IsInRole(WindowsBuiltInRole.Administrator);
+            }     
         }
 
         protected override async Task ExecutionCycle(CancellationToken token)
