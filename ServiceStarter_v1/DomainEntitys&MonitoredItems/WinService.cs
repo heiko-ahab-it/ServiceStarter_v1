@@ -16,7 +16,7 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
         private ServiceController _service;
         [Description("If Stopping des Service fails, the ForceKill will kill the Process of the Service")]
         private Boolean ForceKillProcess { get; set; }
-        private String TechnicalName { get; set; }
+        public String TechnicalName { get; private set; }
 
         [Description("Max Time in seconds the Controller waits for the Service to reach the State 'Running' after trying to Start the Service.")]
         private int MaxBootUpTime { get; set; }
@@ -49,6 +49,11 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
         public override ExecutionResult Recover()
         {
             return this.Start();
+        }
+        public ServiceControllerStatus GetStatus()
+        {
+            this._service.Refresh();
+            return this._service.Status;
         }
 
         public override ExecutionResult Start()

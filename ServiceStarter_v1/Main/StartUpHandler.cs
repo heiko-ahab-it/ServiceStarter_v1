@@ -21,6 +21,24 @@ namespace ServiceStarter_v1.Main
             this._domainEntities = this._domainSource.GetDomainEntities();
             this._sequence = this._domainSource.GetSequence();
         }
+        public int StopAllDomainEntities(CancellationToken token)
+        {
+            int count = 0;
+            foreach (string key in _sequence.AsEnumerable().Reverse())
+            {
+                if (!this._domainEntities.ContainsKey(key))
+                { _logger.LogError($"{this.GetType().Name}._domainEnities do not contain Key: {key}"); }
+                DomainEntity entity = this._domainEntities[key];
+                if (entity.GetType() != typeof(WinService)) { continue; }
+                var service = (WinService)entity;
+                entity.Stop();
+                var state = service.GetStatus();
+                var winService = (WinService)entity;
+                _logger.LogDebug($"{service.TechnicalName}: is in Status: [{state}]");
+                count = state == System.ServiceProcess.ServiceControllerStatus.Stopped ? count + 1 : count;
+            }
+            return count;
+        }
         public int StartAllDomainEntities(CancellationToken token)
         {
             //bool allStarted = false;

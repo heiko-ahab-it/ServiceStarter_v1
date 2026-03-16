@@ -68,9 +68,9 @@ namespace ServiceStarter_v1.Main
 
         protected override Task OnShutdown(CancellationToken token)
         {
-            Console.WriteLine("Shutting down..");
-            Thread.Sleep(3000);
-            Console.Read();
+            this._logger.LogInformation($"Shutting Down ... ");
+            int countShutDownServices = this._startupHandler.StopAllDomainEntities(token);
+            this._logger.LogTrace($"Shut down {countShutDownServices} Services ..");
             return Task.CompletedTask;
         }
     }
