@@ -28,7 +28,7 @@ namespace ServiceStarter_v1.Main
            
         }
 
-        protected async override Task OnStartUp(CancellationToken token)
+        protected override Task OnStartUp(CancellationToken token)
         {
 
             if (OperatingSystem.IsWindows())
@@ -45,7 +45,7 @@ namespace ServiceStarter_v1.Main
             int count = this._startupHandler.StartAllDomainEntities(token);
             _logger.LogDebug($"Started {count} objects...");
 
-            return;
+            return Task.CompletedTask;
 
         }
         #pragma warning disable CA1416

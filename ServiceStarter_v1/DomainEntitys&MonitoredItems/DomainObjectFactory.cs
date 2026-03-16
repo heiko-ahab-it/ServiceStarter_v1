@@ -87,11 +87,11 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
                     case ServiceDTO:
                        
                         string technicalName = ((ServiceDTO)item).ServiceName;
-                        //bool forceKill = this._globalConfig.ForceKillServices;
+                        bool forceKill = this._globalConfig.ForceKillServices;
                   
                         if (!OperatingSystem.IsWindows())
                              throw new Exception(" Operating System is not Windows - software can currently only be used on Windows");
-                        WinService service = ActivatorUtilities.CreateInstance<WinService>(_serviceProvider, uniqueName, maxRetry, recoveryTimeout,technicalName);//new WinService(name, maxRetry, recoveryTimeout);
+                        WinService service = ActivatorUtilities.CreateInstance<WinService>(_serviceProvider, uniqueName, maxRetry, recoveryTimeout,technicalName,forceKill);//new WinService(name, maxRetry, recoveryTimeout);
                         //this._domainEntities.Add(service);
                         this._domainEntities.Add(uniqueName,service);
                         break;

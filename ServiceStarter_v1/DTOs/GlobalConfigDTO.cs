@@ -15,16 +15,16 @@ namespace ServiceStarter_v1.DTOs
         public required bool WinOs { get; set; }
 
 
-        [JsonPropertyName("LOG_PATH")]
-        public required string LogPath { get; set; }
+        [JsonPropertyName("LOG_DIR")]
+        public required string LogDir { get; set; }
 
 
         [JsonPropertyName("MONITOR_DELAY")]
         public int MonitorDelay { get; set; } = 30;
 
-       /* [JsonPropertyName("FORCE_KILL_SERVICES")]
 
-        public bool ForceKillServices { get; set; } = false;*/
+        [JsonPropertyName("FORCE_KILL_SERVICES")]
+        public bool ForceKillServices { get; set; } = false;
 
 
     }

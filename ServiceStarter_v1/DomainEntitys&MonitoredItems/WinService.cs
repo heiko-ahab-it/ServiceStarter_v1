@@ -3,37 +3,73 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
+using System.Management;
 using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 using ServiceStarter_v1.Main;
 
+
 namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
 {
     internal class WinService : DomainEntity
     {
+        public String TechnicalName { get; private set; }
         private ILogger _logger;
         private ServiceController _service;
+        private int? _pid;
+        
+        
+
+        
         [Description("If Stopping des Service fails, the ForceKill will kill the Process of the Service")]
         private Boolean ForceKillProcess { get; set; }
-        public String TechnicalName { get; private set; }
+        
 
         [Description("Max Time in seconds the Controller waits for the Service to reach the State 'Running' after trying to Start the Service.")]
         private int MaxBootUpTime { get; set; }
-        public WinService(string name, int maxRetries, int restartTimeout, string technicalName, ILogger<WinService> logger) : base(name, maxRetries, restartTimeout)
+        public WinService(string name, int maxRetries, int restartTimeout, string technicalName, bool forceKillProcess, ILogger<WinService> logger) : base(name, maxRetries, restartTimeout)
         {
             _logger = logger;
             if (!OperatingSystem.IsWindows()) { throw new PlatformNotSupportedException($"{this.GetType().Name} can only by instantiated on Windows-Devices"); }
             TechnicalName = technicalName;
             MaxBootUpTime = 30;
-            ForceKillProcess = false;
+            ForceKillProcess = forceKillProcess;
             try
             {
                 _service = new ServiceController(TechnicalName);
+                _pid = GetProcessId();
 
             }catch (ArgumentException) { throw; }
+            _logger.LogTrace($"{this.TechnicalName}:{this._pid}");
 
             
+
+        }
+#pragma warning disable CA1416
+        private int? GetProcessId()
+        {
+            int? processId = null;
+            using (ManagementObject manObj = new ManagementObject($"Win32_Service.Name='{this.TechnicalName}'"))
+            {
+                manObj.Get();
+                processId = Convert.ToInt32(manObj["ProcessId"]);
+                return processId != 0 ? processId : null;
+            }
+        }
+        private bool KillProcess()
+        {
+            bool processKilled = false;
+            if (this._pid == null) { return processKilled; }
+            try
+            {
+                Process target = Process.GetProcessById(_pid.Value);
+                target.Kill();
+                target.WaitForExit(50000);
+                _logger.LogDebug($"Process: [{_pid}] was killed. ");
+            }catch(Exception ex) { _logger.LogDebug($"Killing Process {_pid} failed: {ex.Message}"); }
+
+            return processKilled;
 
         }
 
@@ -86,6 +122,7 @@ namespace ServiceStarter_v1.DomainEntitys_MonitoredItems
                 catch (Exception err)
                 {
                     this._logger.LogError($"{this.TechnicalName} failed to Stop. \n {err.Message} \n {err.StackTrace} \n {err.InnerException} \n {err.Source}\n");
+                    if (ForceKillProcess) { this.KillProcess(); }
                     return new ExecutionResult(false, $"Stopping {this.TechnicalName} failed, due to [{err.Message}]");
                 }
             }

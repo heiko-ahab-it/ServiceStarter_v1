@@ -1,0 +1,11 @@
+2026-03-16 12:24:29.431 [INF] [::] Reading Config-File from D:\Workspaces\1_TestData\2026-02-26_Konfig_V3.json
+2026-03-16 12:24:52.823 [INF] [::] Reading Config-File from D:\Workspaces\1_TestData\2026-02-26_Konfig_V3.json
+2026-03-16 12:24:53.159 [VRB] [::] ConfigDTO: ConfigLoader_v2.ConfigDTO created from ConfigFileD:\Workspaces\1_TestData\2026-02-26_Konfig_V3.json
+2026-03-16 12:24:53.161 [INF] [::] Current Log Directory: D:\Workspaces\2_LOG
+2026-03-16 12:24:53.203 [VRB] [::] ConfigLoader_v2.ConfigDTO object is validated: True
+2026-03-16 12:24:53.206 [INF] [::] Bootstrap finished |  Changing to Working Log ... || -> D:\Workspaces\2_LOG 
+2026-03-16 12:29:33.489 [INF] [::] Reading Config-File from D:\Workspaces\1_TestData\2026-02-26_Konfig_V3.json
+2026-03-16 12:29:34.190 [VRB] [::] ConfigDTO: ConfigLoader_v2.ConfigDTO created from ConfigFileD:\Workspaces\1_TestData\2026-02-26_Konfig_V3.json
+2026-03-16 12:29:34.565 [INF] [::] Current Log Directory: D:\Workspaces\2_LOG
+2026-03-16 12:29:34.679 [VRB] [::] ConfigLoader_v2.ConfigDTO object is validated: True
+2026-03-16 12:29:34.687 [INF] [::] Bootstrap finished |  Changing to Working Log ... || -> D:\Workspaces\2_LOG 
